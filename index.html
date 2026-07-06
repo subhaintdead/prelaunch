@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balurghat's own — waitlist</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --paper: #F7F5EF;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A46;
+    --accent: #C98A1F;
+    --rule: #D8D3C6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Lora', Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.25rem;
+  }
+
+  .question {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 1.75rem;
+    font-weight: 500;
+  }
+
+  .body-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin: 0 0 1.5rem;
+    color: var(--ink);
+  }
+
+  .body-text.soft {
+    color: var(--ink-soft);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.75rem 0;
+  }
+
+  .signoff {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin: 0 0 1.5rem;
+  }
+
+  .signoff strong {
+    font-weight: 600;
+  }
+
+  .commission-line {
+    font-weight: 600;
+  }
+
+  .form-block {
+    margin-top: 3rem;
+  }
+
+  .gform {
+    width: 100%;
+    max-width: 640px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+  }
+
+  .foot {
+    margin-top: 4rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .wrap > * {
+      animation: rise 0.5s ease backwards;
+    }
+    .eyebrow { animation-delay: 0s; }
+    .question { animation-delay: 0.05s; }
+    .body-text { animation-delay: 0.1s; }
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 3rem 1.25rem 4rem; }
+    .question { font-size: 1.3rem; }
+    .body-text, .signoff { font-size: 1.05rem; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">Balurghat · Pre-launch</div>
+
+    <p class="question">Have you ever used any food delivery services before?</p>
+
+    <p class="body-text">Yes, I am talking of those apps. They charge <span class="commission-line">20&ndash;40% extra</span> on orders. And, by using the app, you're buying a sixth luxury car for a guy in a tier 1 city you'll probably never see.</p>
+
+    <hr class="divider">
+
+    <p class="signoff">Hi, this is Subh from your own town, Balurghat.</p>
+
+    <p class="body-text">We are making something where you can get the same food you get from a middleman monster but <span class="commission-line">~20&ndash;30% cheaper</span> thanks to smaller commissions.</p>
+
+    <p class="body-text soft">Same food, from the same kitchen, but cheaper &mdash; because we refuse to charge those insane commissions.</p>
+
+    <div class="form-block">
+      <iframe class="gform" src="https://docs.google.com/forms/d/e/1FAIpQLScQITuyBDHhY510i9uam8rCzY3qHGmbU7QWJMm-HCU9N2I_eg/viewform?embedded=true" width="640" height="556" frameborder="0" marginheight="0" marginwidth="0">Loading&hellip;</iframe>
+    </div>
+
+    <p class="foot">Launching third week of July, in Balurghat.</p>
+  </div>
+
+  <script>
+    // Google Form is embedded directly above — no custom submit handling needed.
+  </script>
+</body>
+</html>
