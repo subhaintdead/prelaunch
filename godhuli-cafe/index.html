@@ -694,7 +694,7 @@
   }
 
   async function sendOrderToKitchen(order){
-    const res = await fetch('/godhuli-cafe/api/send-order', {
+    const res = await fetch('./api/send-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(order),
